@@ -30,6 +30,11 @@ public class Location {
                 Objects.equals(street, location.street);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(city, country, street, builing);
+    }
+
     public String getCity() {
         return city;
     }
